@@ -38,7 +38,6 @@ vector<int> NodeMoveVector[NODE_MOVE_VECTOR_SIZE];
 
 vector<ULL> multipliers;
 
-
 struct NODE {
 	KEY key;
 	int f;
@@ -76,6 +75,8 @@ void initMul();
 void initNodeMoveVector();
 
 KEY getMovedKey(const KEY &key, const int &old_idx, const int &new_idx);
+
+//this fuction can be optimize by memoization
 int computeHuristicValue(const KEY & key, const KEY & endkey);
 int Astar();
 void getInput();
@@ -93,6 +94,17 @@ int main() {
 	
 	//get input
 	getInput();
+
+
+	//printf start, end node
+	NODE start_node(START_STATE);
+	NODE end_node(END_STATE);
+	printf("start NODE\n");
+	print_NODE(start_node);
+	printf("end NODE\n");
+	print_NODE(end_node);
+
+
 
 	//compute astar
 	start_time();
@@ -318,21 +330,30 @@ void printResult() {
 	printf("number of minimum move : %d\n", ans);
 
 	//time
-	printf("total time : %.4f\n", (stop_time - begin_time) );
+	printf("total time : %.4f\n", double(stop_time - begin_time)/CLOCKS_PER_SEC );
 
 	//path
 	NODE end_node(END_STATE);
 	KEY key = end_node.key;
 	printf("movement of puzzle\n");
 	int count = 1;
+
+	vector<pair<KEY, KEY>> shortPath;
 	while (path[key] != key) {
-		printf("[%d] move\n", count++);
-		printMovement(key, path[key]);
+		//printf("[%d] move\n", count++);
+		shortPath.push_back( pair<KEY, KEY>(key, path[key]) );
+		//printMovement(key, path[key]);
 		//NODE node(key);
 		//print_NODE(node);
 		key = path[key];
 	}
+	reverse(shortPath.begin(), shortPath.end());
 
+	for (int i = 0; i < shortPath.size(); i++) {
+		printf("[%d] move\n", i+1);
+		KEY a = shortPath[i].second, b = shortPath[i].first;
+		printMovement(a, b);
+	}
 
 }
 // end input & print function

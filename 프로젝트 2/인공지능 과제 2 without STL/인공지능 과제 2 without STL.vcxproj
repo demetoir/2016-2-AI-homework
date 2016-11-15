@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{D20695C5-A806-4738-9709-A2561E3D4C09}</ProjectGuid>
+    <ProjectGuid>{C2207698-80D3-4E7E-9684-1FD9F1650AE9}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>인공지능과제2</RootNamespace>
+    <RootNamespace>인공지능과제2withoutSTL</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -142,7 +142,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="astar.cpp" />
+    <ClCompile Include="소스.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />

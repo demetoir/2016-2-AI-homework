@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "인공지능 과제2", "인공지능 과제2\인공지능 과제2.vcxproj", "{D20695C5-A806-4738-9709-A2561E3D4C09}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "puzzle generator", "puzzle generator\puzzle generator.vcxproj", "{7F3D32D4-6679-4619-9B4C-BBE7E3C79D47}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "인공지능 과제 2 without STL", "인공지능 과제 2 without STL\인공지능 과제 2 without STL.vcxproj", "{C2207698-80D3-4E7E-9684-1FD9F1650AE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +25,22 @@ Global
 		{D20695C5-A806-4738-9709-A2561E3D4C09}.Release|x64.Build.0 = Release|x64
 		{D20695C5-A806-4738-9709-A2561E3D4C09}.Release|x86.ActiveCfg = Release|Win32
 		{D20695C5-A806-4738-9709-A2561E3D4C09}.Release|x86.Build.0 = Release|Win32
+		{7F3D32D4-6679-4619-9B4C-BBE7E3C79D47}.Debug|x64.ActiveCfg = Debug|x64
+		{7F3D32D4-6679-4619-9B4C-BBE7E3C79D47}.Debug|x64.Build.0 = Debug|x64
+		{7F3D32D4-6679-4619-9B4C-BBE7E3C79D47}.Debug|x86.ActiveCfg = Debug|Win32
+		{7F3D32D4-6679-4619-9B4C-BBE7E3C79D47}.Debug|x86.Build.0 = Debug|Win32
+		{7F3D32D4-6679-4619-9B4C-BBE7E3C79D47}.Release|x64.ActiveCfg = Release|x64
+		{7F3D32D4-6679-4619-9B4C-BBE7E3C79D47}.Release|x64.Build.0 = Release|x64
+		{7F3D32D4-6679-4619-9B4C-BBE7E3C79D47}.Release|x86.ActiveCfg = Release|Win32
+		{7F3D32D4-6679-4619-9B4C-BBE7E3C79D47}.Release|x86.Build.0 = Release|Win32
+		{C2207698-80D3-4E7E-9684-1FD9F1650AE9}.Debug|x64.ActiveCfg = Debug|x64
+		{C2207698-80D3-4E7E-9684-1FD9F1650AE9}.Debug|x64.Build.0 = Debug|x64
+		{C2207698-80D3-4E7E-9684-1FD9F1650AE9}.Debug|x86.ActiveCfg = Debug|Win32
+		{C2207698-80D3-4E7E-9684-1FD9F1650AE9}.Debug|x86.Build.0 = Debug|Win32
+		{C2207698-80D3-4E7E-9684-1FD9F1650AE9}.Release|x64.ActiveCfg = Release|x64
+		{C2207698-80D3-4E7E-9684-1FD9F1650AE9}.Release|x64.Build.0 = Release|x64
+		{C2207698-80D3-4E7E-9684-1FD9F1650AE9}.Release|x86.ActiveCfg = Release|Win32
+		{C2207698-80D3-4E7E-9684-1FD9F1650AE9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

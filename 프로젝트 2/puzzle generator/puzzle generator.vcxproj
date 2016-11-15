@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{D20695C5-A806-4738-9709-A2561E3D4C09}</ProjectGuid>
+    <ProjectGuid>{7F3D32D4-6679-4619-9B4C-BBE7E3C79D47}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>인공지능과제2</RootNamespace>
+    <RootNamespace>puzzlegenerator</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -142,10 +142,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="astar.cpp" />
+    <ClCompile Include="puzzle generator.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="input.txt" />
+    <Text Include="output.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

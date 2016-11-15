@@ -15,12 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="input.txt">
-      <Filter>소스 파일</Filter>
-    </Text>
+    <Text Include="output.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="astar.cpp">
+    <ClCompile Include="puzzle generator.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
