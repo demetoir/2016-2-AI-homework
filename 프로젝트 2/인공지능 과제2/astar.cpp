@@ -89,12 +89,13 @@ void printResult();
 int main() {
 
 	//init 
+	dist_map.clear();
+	path.clear();
 	initMul();
 	initNodeMoveVector();
 	
 	//get input
 	getInput();
-
 
 	//printf start, end node
 	NODE start_node(START_STATE);
@@ -104,8 +105,6 @@ int main() {
 	printf("end NODE\n");
 	print_NODE(end_node);
 
-
-
 	//compute astar
 	start_time();
 	ans = Astar();
@@ -113,7 +112,6 @@ int main() {
 
 	//show result( ans,time, path,...
 	printResult();
-
 
 	return 0;
 }
